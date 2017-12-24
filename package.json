@@ -1,6 +1,6 @@
 {
   "name": "adonis-discordjs",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "A adonisjs 4 wrapper for discordjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -9,7 +9,12 @@
     "url": "https://github.com/abstractFlo/adonis-discordjs",
     "type": "git"
   },
-  "keywords": ["Discord", "Adonisjs", "Bot", "Game"],
+  "keywords": [
+    "Discord",
+    "Adonisjs",
+    "Bot",
+    "Game"
+  ],
   "author": "Florian Uhlrich <f.uhlrich@abstractmedia.de>",
   "license": "MIT",
   "dependencies": {
