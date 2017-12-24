@@ -1,16 +1,11 @@
 {
-  "name": "hangman-bot",
+  "name": "adonis-discordjs",
   "version": "1.0.0",
-  "description": "A Hangman Bot for Discord",
+  "description": "A adonisjs 4 wrapper for discordjs",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [
-    "Discord",
-    "Hangman",
-    "Bot",
-    "Game"
-  ],
+  "keywords": ["Discord", "Adonisjs", "Bot", "Game"],
   "author": "Florian Uhlrich <f.uhlrich@abstractmedia.de>",
   "license": "MIT",
   "dependencies": {
