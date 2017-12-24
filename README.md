@@ -36,6 +36,6 @@ Thats all, your bot is logged in with token to your server. All errors logged to
 
 ### Thanks
 
-My biggest thanks goes to [https://github.com/Devcord/cordlr-plugin](https://github.com/Devcord/cordlr-plugin)
+My biggest thanks goes to [https://github.com/Devcord/cordlr-cli](https://github.com/Devcord/cordlr-cli)
 
-My package is only a wrapper between cordlr-plugin and adonisjs 4 without the cli part from cordlr. It's a custom implementation with the power of serviceprovider from adonisjs
+My package is only a wrapper between cordlr-cli and adonisjs 4 without the cli part from cordlr. It's a custom implementation with the power of serviceprovider from adonisjs
