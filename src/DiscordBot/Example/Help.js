@@ -34,7 +34,7 @@ class Help {
         const description = plugin[command].description || 'No description added'
 
         fields.push({
-          name: `${this.helper.getPrefix()}${command} ${usage}`,
+          name: `${this.helper.prefix}${command} ${usage}`,
           value: description
         })
       }

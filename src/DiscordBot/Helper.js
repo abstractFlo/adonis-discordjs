@@ -1,6 +1,10 @@
 const hexToDec = require('hex-to-dec')
 
 class Helper {
+  constructor(prefix) {
+    this.msgPrefix = prefix
+  }
+
   /**
    * Sends a info embed for warnings, errors and success messages
    *
@@ -78,8 +82,8 @@ class Helper {
   /**
    * Return the current prefix
    */
-  getPrefix() {
-    return '!'
+  get prefix() {
+    return this.msgPrefix
   }
 }
 

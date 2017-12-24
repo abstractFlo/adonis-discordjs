@@ -49,7 +49,8 @@ class DiscordBotProvider extends ServiceProvider {
    */
   registerHelper() {
     this.app.singleton('DiscordBot/Helper', () => {
-      return new (require('../src/DiscordBot/Helper'))()
+      const Env = this.app.use('Env')
+      return new (require('../src/DiscordBot/Helper'))(Env.get('BOT_MESSAGE_PREFIX', '!'))
     })
   }
 

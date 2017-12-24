@@ -90,7 +90,7 @@ class PluginLoader {
    */
   getPluginCommand(command) {
     for (const plugin of this.loadedPlugins) {
-      if (command in plugin.commands) {
+      if (plugin.commands !== undefined && command in plugin.commands) {
         const permissions = plugin.commands[command].permissions || []
         const description = plugin.commands[command].description || ''
 

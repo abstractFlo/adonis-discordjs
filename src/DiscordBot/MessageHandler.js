@@ -3,22 +3,20 @@
 const minimist = require('minimist')
 const spawnargs = require('spawn-args')
 
-class MessageHandler {
-  constructor(prefix) {
-    this.prefix = prefix || '!'
-  }
+const Helper = use('DiscordBot/Helper')
 
+class MessageHandler {
   /**
    * Check if the message has the prefix
    * @param {string} message
    */
   checkIfMessageStartsWithPrefix(message) {
-    return message.content.startsWith(this.prefix) && message.channel.type !== 'dm'
+    return message.content.startsWith(Helper.prefix) && message.channel.type !== 'dm'
   }
 
   handle(message, PluginLoader, Scheduler) {
     if (this.checkIfMessageStartsWithPrefix(message)) {
-      const input = spawnargs(message.content.slice(this.prefix.length))
+      const input = spawnargs(message.content.slice(Helper.prefix.length))
       const flags = minimist(input)
       const args = flags._
       const command = args.shift()
