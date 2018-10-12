@@ -34,6 +34,26 @@ Than you can start the adonis server with `adonis serve —dev` or in production
 
 Thats all, your bot is logged in with token to your server. All errors logged to console from server
 
+### Add your code
+
+In the root of your project, there is a file named `bot-plugins.js`. The contents of this file are as follows:
+
+```
+'use strict'
+
+module.exports = ['Example/Help', 'Example/Prune']
+```
+
+Simply add the path to your logic file to the array and you're good to go.
+
+For example:
+
+```
+'use strict'
+
+module.exports = ['Example/Help', 'Example/Prune', 'app/Services/YOURBOTLOGIC.js']
+```
+
 ### Thanks
 
 My biggest thanks goes to [https://github.com/Devcord/cordlr-cli](https://github.com/Devcord/cordlr-cli)
